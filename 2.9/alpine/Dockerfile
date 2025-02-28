@@ -1,7 +1,7 @@
 FROM caddy:2.9.1-builder AS builder
 
 RUN xcaddy build \
-	--with https://github.com/heroalex/caddy-hetzner-dns
+	--with github.com/heroalex/caddy-hetzner-dns
 
 FROM alpine:3.20
 
