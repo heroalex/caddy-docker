@@ -1,4 +1,4 @@
-FROM caddy:v2.9.1-builder AS builder
+FROM caddy:2.9.1-builder AS builder
 
 RUN xcaddy build \
 	--with https://github.com/heroalex/caddy-hetzner-dns
